@@ -11,12 +11,11 @@ i = 0
 #
 #     else:
 while money > 0:
-
-    c = int(input('请输入您预测的数字'))
-    money = money - 100
     if b == 'q' or b == 'Q':
         break
-    elif c == a:
+    c = int(input('请输入您预测的数字'))
+    money = money - 100
+    if c == a:
         print('恭喜中奖,您的余额还剩', money)
         break
     elif c < a:
